@@ -8,78 +8,69 @@ import { footerAccountItems, footerLinkItems } from "../../data/dummyData/dummyD
 
 const Footer = () => {
   return (
-    <div className=" bg-slate-900 py-10 text-gray-400 flex flex-wrap flex-row justify-between items-start">
-      <div className="flex flex-col w-3/4 sm:w-1/3 px-6 items-start">
-        <div className="mx-auto">
-        <div className="p-4 bg-white rounded-3xl items-center justify-center shadow-inherit ">
-          <img
-            src="https://www.wilsonsleather.com/media/logo/stores/22/WL_LeatherMadeSince1899_Blk_logo.png" width="200"
-            alt="site logo"
-            className=" w-40 h-auto pb-4 text-center bg-white"
-          />
-        </div>
-       
-        <div className="flex flex-row justify-start items-center p-4">
-          <div className="pr-4 text-xl">
-            <MdOutlineLocationOn />
+    <footer className="bg-gray-200 bottom-0 shadow-inner">
+        <div>
+          <div className="grid gap-10 grid-cols-5 p-4 ">
+            <section className="col-span-5 md:col-span-2">
+              <h3 className="font-bold text-gray-500 mb-2">About project</h3>
+              <p>
+                This project is a blog project. The user must be able to like
+                and bookmark the posts. The user must be able to post comments
+                and reply to other people's comments. The user can be
+                authenticated with <span className="font-bold text-violet-500"> httpOnly cookies</span>  This project is made by <span className="font-bold text-violet-500">Next.js</span> and is <span className="font-bold text-violet-500">SSR</span> project.
+              </p>
+            </section>
+            <section className="col-span-5 md:col-span-1">
+              <h3 className="font-bold text-gray-500">site parts</h3>
+              <nav>
+                <ul>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    products
+                  </li>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    blogs
+                  </li>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    about us
+                  </li>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    start learning
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <section className="col-span-5 md:col-span-1">
+              <h3 className="font-bold text-gray-500">products</h3>
+              <nav>
+                <ul>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    React course
+                  </li>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    Next course
+                  </li>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    Node course
+                  </li>
+                  <li className="list-disc py-2 list-inside text-gray-400">
+                    Tailwind course
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <section className="col-span-5 md:col-span-1">
+              <img
+                src="https://cdn.zarinpal.com/badges/trustLogo/1.svg"
+                className="h-24 w-20 mb-3"
+                alt="zarinpal"
+              />
+              <h2 className="font-bold text-gray-600">
+                Made By : Ashkan Valizadeh
+              </h2>
+            </section>
           </div>
-          <p>Street No. 12, Newyork 12, USA</p>
         </div>
-        <div className="flex flex-row justify-start items-center p-4">
-          <div className="pr-4 text-xl">
-            <FiPhone />
-          </div>
-          <div className="flex flex-col">
-            <p className="pb-2">1.800.123.456789</p>
-            <p>1.800.123.456789</p>
-          </div>
-        </div>
-        <div className="flex flex-row justify-start items-center p-4">
-          <div className="pr-4 text-xl">
-            <MdOutlineMail />
-          </div>
-          <div className="flex flex-col">
-            <p className="pb-2">info@BoShop.com</p>
-            <p>contact@BoShop.com</p>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div className="flex flex-col w-1/2 sm:w-1/3 items-center">
-        <div className=" pt-4 pb-12">
-          <span className=" text-xl font-semibold text-white">Links</span>
-        </div>
-        <div className="flex flex-col ">
-          {footerLinkItems.map((item) => (
-            <Link
-              key={item.id}
-              to={item.to}
-              className="py-2 hover:text-white hover:scale-105 transition-all duration-500"
-            >
-              {item.item}
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col w-1/2 sm:w-1/3 items-center">
-        <div className=" pt-4 pb-12">
-          <span className=" text-xl font-semibold text-white">
-            Account Info
-          </span>
-        </div>
-        <div className="flex flex-col ">
-          {footerAccountItems.map((item) => (
-            <a
-              key={item.id}
-              href="#"
-              className="py-2 hover:text-white hover:scale-105 transition-all duration-500"
-            >
-              {item.item}
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
+      </footer>
   );
 };
 

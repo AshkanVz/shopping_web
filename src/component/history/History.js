@@ -17,7 +17,7 @@ const History = () => {
         ></div>
         <div className=" w-full md:w-1/2 px-8 lg:px-16 pt-3 pb-9 flex flex-col">
           <span className=" text-3xl my-6 mx-auto">
-            A Brief History of the BoShop
+            A Brief History of the wilsons
           </span>
           <p className="leading-6 text-gray-900 m-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

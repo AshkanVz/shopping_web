@@ -83,15 +83,7 @@ const Navbar = () => {
                 
               </Link>
             </Tooltip>
-            <Tooltip title="Wish List">
-              <Link
-                to="/wishlist"
-                className=" relative p-2 m-1  rounded-full   hover:bg-slate-800 hover:text-gray-50 text-xl text-gray-500 transition duration-500"
-              >
-                <AiOutlineHeart />
-                
-              </Link>
-            </Tooltip>
+            
           </ul>
         </div>
       </div>
